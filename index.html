@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teams @ MSC CIT</title>
+    <title>Teams @ MLSA-CIT</title>
     <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body class="bg-gradient-to-br from-gray-800 via-blue-700 to-black min-h-screen text-white overflow-x-hidden">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@300;400;500;700&display=swap');
         
@@ -82,8 +85,6 @@
             padding-right: 1rem;
         }
     </style>
-</head>
-<body class="bg-gradient-to-br from-gray-800 via-blue-700 to-black min-h-screen text-white overflow-x-hidden">
     <style>
         .card-glow:hover {
             box-shadow: 0 0 25px 5px rgba(59, 130, 246, 0.5); /* Blue glow */
@@ -115,7 +116,7 @@
 
         <!-- Header -->
         <h1 class="text-4xl md:text-4xl font-bold text-center mb-16 text-white" data-aos="fade-down">
-            Microsoft Learn <br> Student Ambassadors - CIT Chapter <br> Teams
+            Microsoft Learn <br> Student Ambassadors - CIT Chapter <br> <br> Teams
         </h1>
 
         <!-- Leadership Section -->
@@ -219,91 +220,67 @@
         <h2 class="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-up">Our Teams</h2>
         
         <!-- Left Navigation Button -->
-        <button onclick="scrollTeams('left')" class="absolute left-6 top-[60%] transform -translate-y-1/2 z-10 px-4 py-8 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg text-white transition-all duration-300 backdrop-blur-sm shadow-lg">
+        <button onclick="scrollTeams('left')" class="md:hidden absolute left-0 top-[60%] transform -translate-y-1/2 z-10 px-4 py-8 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg text-white transition-all duration-300 backdrop-blur-sm shadow-lg">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
         </button>
 
         <!-- Right Navigation Button -->
-        <button onclick="scrollTeams('right')" class="absolute right-6 top-[60%] transform -translate-y-1/2 z-10 px-4 py-8 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg text-white transition-all duration-300 backdrop-blur-sm shadow-lg">
+        <button onclick="scrollTeams('right')" class="md:hidden absolute right-0 top-[60%] transform -translate-y-1/2 z-10 px-4 py-8 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg text-white transition-all duration-300 backdrop-blur-sm shadow-lg">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
         </button>
 
-        <div class="team-cards-container px-20">
+        <div class="team-cards-container md:px-20 pl-16 pr-4 flex justify-start md:justify-center items-center gap-12 overflow-x-auto">
             <!-- Technical Team -->
-            <div class="team-card bg-gradient-to-br from-purple-600/20 to-purple-800/20 backdrop-blur-sm rounded-xl p-6 text-center hover:shadow-2xl hover:shadow-purple-500/20">
-                <div class="w-16 h-16 mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-purple-200">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                    </svg>
+            <a href="techTeam.html" class="flex flex-col items-center group flex-shrink-0 mx-2">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500/30 to-blue-700/30 backdrop-blur-sm p-6 flex items-center justify-center hover:shadow-2xl hover:bg-gray-900 backdrop-blur-sm border border-white/10 shadow-purple-400/30 transition-all duration-300 hover:scale-110">
+                    <img src="Assets/Teams Logo/technical logo.svg" alt="Media Team Logo" class="w-full h-full">
                 </div>
-                <h3 class="text-2xl font-bold text-purple-100 mb-3">Technical Team</h3>
-                <p class="text-gray-300 mb-4">Driving innovation through <br> code and technology</p>
-                <a href="techTeam.html" class="inline-block px-6 py-2 bg-purple-500/20 hover:bg-purple-500/30 rounded-lg text-purple-100 transition-all duration-300">Learn More →</a>
-            </div>
+                <span class="mt-4 text-xl font-bold text-purple-200 group-hover:text-purple-300 transition-colors duration-300">Tech Team</span>
+            </a>
 
             <!-- Media Team -->
-            <div class="team-card bg-gradient-to-br from-purple-500/30 to-purple-700/30 backdrop-blur-sm rounded-xl p-6 text-center hover:shadow-2xl hover:shadow-purple-400/30">
-                <div class="w-16 h-16 mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-purple-200">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
-                    </svg>
+            <a href="mediaTeam.html" class="flex flex-col items-center group flex-shrink-0 mx-2">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500/30 to-blue-700/30 backdrop-blur-sm p-6 flex items-center justify-center hover:shadow-2xl hover:bg-gray-900 backdrop-blur-sm border border-white/10 shadow-purple-400/30 transition-all duration-300 hover:scale-110">
+                    <img src="Assets/Teams Logo/Social Media Logo.svg" alt="Media Team Logo" class="w-full h-full">
                 </div>
-                <h3 class="text-2xl font-bold text-purple-200 mb-3">Media Team</h3>
-                <p class="text-gray-200 mb-4">Creating engaging multimedia content</p>
-                <a href="mediaTeam.html" class="inline-block px-6 py-2 bg-purple-400/30 hover:bg-purple-400/40 rounded-lg text-purple-200 transition-all duration-300">Learn More →</a>
-            </div>
+                <span class="mt-4 text-xl font-bold text-purple-200 group-hover:text-purple-300 transition-colors duration-300">Media Team</span>
+            </a>
 
             <!-- Marketing Team -->
-            <div class="team-card bg-gradient-to-br from-green-500/30 to-green-700/30 backdrop-blur-sm rounded-xl p-6 text-center hover:shadow-2xl hover:shadow-green-400/30">
-                <div class="w-16 h-16 mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-green-300">
-                        <path d="M16 11.78c-.27-.44-.67-.84-1.12-1.12L12.5 9.5l-1.87 3.12c-.28.44-.68.84-1.13 1.12L4 16.36V21h16v-4.64l-4-2.58zM4 3h16v2H4zm0 3h16v2H4z"/>
-                    </svg>
+            <a href="marketingTeam.html" class="flex flex-col items-center group flex-shrink-0 mx-2">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500/30 to-blue-700/30 backdrop-blur-sm p-6 flex items-center justify-center hover:shadow-2xl hover:bg-gray-900 backdrop-blur-sm border border-white/10 shadow-purple-400/30 transition-all duration-300 hover:scale-110">
+                    <img src="Assets/Teams Logo/Marketing Logo.svg" alt="Media Team Logo" class="w-full h-full">
                 </div>
-                <h3 class="text-2xl font-bold text-green-300 mb-3">Marketing Team</h3>
-                <p class="text-gray-200 mb-4">Growing our community and reach</p>
-                <a href="marketingTeam.html" class="inline-block px-6 py-2 bg-green-400/30 hover:bg-green-400/40 rounded-lg text-green-300 transition-all duration-300">Learn More →</a>
-            </div>
+                <span class="mt-4 text-xl font-bold text-purple-200 group-hover:text-purple-300 transition-colors duration-300">Marketing Team</span>
+            </a>
 
             <!-- Design Team -->
-            <div class="team-card bg-gradient-to-br from-pink-600/20 to-pink-800/20 backdrop-blur-sm rounded-xl p-6 text-center hover:shadow-2xl hover:shadow-pink-500/20">
-                <div class="w-16 h-16 mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-pink-400">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                    </svg>
+            <a href="design team.html" class="flex flex-col items-center group flex-shrink-0 mx-2">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500/30 to-blue-700/30 backdrop-blur-sm p-6 flex items-center justify-center hover:shadow-2xl hover:bg-gray-900 backdrop-blur-sm border border-white/10 shadow-purple-400/30 transition-all duration-300 hover:scale-110">
+                    <img src="Assets/Teams Logo/Designer logo.svg" alt="Media Team Logo" class="w-full h-full">
                 </div>
-                <h3 class="text-2xl font-bold text-pink-400 mb-3">Design Team</h3>
-                <p class="text-gray-300 mb-4">Crafting beautiful visual experiences</p>
-                <a href="design team.html" class="inline-block px-6 py-2 bg-pink-500/20 hover:bg-pink-500/30 rounded-lg text-pink-400 transition-all duration-300">Learn More →</a>
-            </div>
+                <span class="mt-4 text-xl font-bold text-purple-200 group-hover:text-purple-300 transition-colors duration-300">Design Team</span>
+            </a>
 
             <!-- Curation Team -->
-            <div class="team-card bg-gradient-to-br from-yellow-600/20 to-yellow-800/20 backdrop-blur-sm rounded-xl p-6 text-center hover:shadow-2xl hover:shadow-yellow-500/20">
-                <div class="w-16 h-16 mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400">
-                        <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>
-                    </svg>
+            <a href="curationTeam.html" class="flex flex-col items-center group flex-shrink-0 mx-2">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500/30 to-blue-700/30 backdrop-blur-sm p-6 flex items-center justify-center hover:shadow-2xl hover:bg-gray-900 backdrop-blur-sm border border-white/10 shadow-purple-400/30 transition-all duration-300 hover:scale-110">
+                    <img src="Assets/Teams Logo/curation logo.svg" alt="Media Team Logo" class="w-full h-full">
                 </div>
-                <h3 class="text-2xl font-bold text-yellow-400 mb-3">Curation Team</h3>
-                <p class="text-gray-300 mb-4">Curating quality content and resources</p>
-                <a href="curationTeam.html" class="inline-block px-6 py-2 bg-yellow-500/20 hover:bg-yellow-500/30 rounded-lg text-yellow-400 transition-all duration-300">Learn More →</a>
-            </div>
+                <span class="mt-4 text-xl font-bold text-purple-200 group-hover:text-purple-300 transition-colors duration-300">Curation Team</span>
+            </a>
 
             <!-- Treasury Team -->
-            <div class="team-card bg-gradient-to-br from-purple-500/30 to-purple-700/30 backdrop-blur-sm rounded-xl p-6 text-center hover:shadow-2xl hover:shadow-purple-400/30">
-                <div class="w-16 h-16 mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-purple-200">
-                        <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
-                    </svg>
+            <a href="treasuryTeam.html" class="flex flex-col items-center group flex-shrink-0 mx-2">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500/30 to-blue-700/30 backdrop-blur-sm p-6 flex items-center justify-center hover:shadow-2xl hover:bg-gray-900 backdrop-blur-sm border border-white/10 shadow-purple-400/30 transition-all duration-300 hover:scale-110">
+                    <img src="Assets/Teams Logo/Treasury Logo.svg" alt="Media Team Logo" class="w-full h-full">
                 </div>
-                <h3 class="text-2xl font-bold text-purple-200 mb-3">Treasury Team</h3>
-                <p class="text-gray-200 mb-4">Managing Finances <br> of the Club </p>
-                <a href="treasuryTeam.html" class="inline-block px-6 py-2 bg-purple-400/30 hover:bg-purple-400/40 rounded-lg text-purple-200 transition-all duration-300">Learn More →</a>
-            </div>
+                <span class="mt-4 text-xl font-bold text-purple-200 group-hover:text-purple-300 transition-colors duration-300">Treasury Team</span>
+            </a>
 
         </div>
     </div>
